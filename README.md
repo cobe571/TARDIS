@@ -26,4 +26,3 @@ July, 30, 2019
 https://github.com/cobe571
 https://sites.google.com/site/cobe571/home
 cobe571@gmail.com
-========================================================
