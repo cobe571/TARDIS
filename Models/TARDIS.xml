@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- A wrapper file for the TARDIS 3D model          -->
+<!-- License:  GNU GPL Version 2, June 1991          -->
+<!-- Author:   Patrizio Melis                        -->
+<!-- Email:    cobe571@gmail.com                     -->
+
+<PropertyList>
+ <path>TARDIS.ac</path>
+
+ <!-- #####################   CLOAKING DEVICE   #################### -->
+
+ <animation>
+   <type>blend</type>
+   <object>TARDIS</object>
+   <object>  </object>
+   <property>/sim/multiplay/generic/float[0]</property>
+   <factor>1</factor>
+   <min>0</min>
+   <max>1</max>
+ </animation>
+    
+
+</PropertyList>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- License:  GNU GPL Version 2, June 1991          -->
+<!-- Author:   Patrizio Melis                        -->
+<!-- Email:    cobe571@gmail.com                     -->
+
+<PropertyList>
+
+ <sim>
+
+  <description>TARDIS</description>
+  <author>Patrizio Melis (3D, FDM)</author>
+  <status>alpha</status>
+
+  <flight-model>ufo</flight-model>
+  
+  <tags>
+    <tag>TARDIS</tag>
+    <tag>DoctorWHO</tag>
+    <tag>TimeAndRelativeDimensionInSpace</tag>
+    <tag>BiggerOnTheInside</tag>
+    <tag>TimeMachine</tag>
+    <tag>Spacecraft</tag>
+  </tags>
+  
+  <rating>
+      <FDM type="int">     0 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   5 </model>
+  </rating>
+
+  <startup>
+   <splash-texture>Aircraft/TARDIS/TARDIS-splash.jpg</splash-texture>
+  </startup>
+
+  <sound>
+   <path type="string">Aircraft/TARDIS/Sounds/TARDIS-sound.xml</path>
+  </sound>
+
+  <submodels> 
+<!--  -->
+  </submodels>
+
+  <virtual-cockpit archive="y">true</virtual-cockpit>
+
+  <model>
+   <path>Aircraft/TARDIS/Models/TARDIS.xml</path>
+  </model>
+  
+  <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+        <x-offset-m archive="y">  0.00 </x-offset-m>	<!-- Right -->
+        <y-offset-m archive="y">  1.35 </y-offset-m>	<!-- Up    -->
+        <z-offset-m archive="y"> -1.95 </z-offset-m>	<!-- Back  -->
+        <default-field-of-view-deg> 85 </default-field-of-view-deg>
+        <pitch-offset-deg> -6.3 </pitch-offset-deg>
+      </config>
+    </view>
+
+  <help>
+   <title>TARDIS</title>
+   <key>
+    <name>c (lower case c)</name>
+    <desc>Toggle Cloaking Device</desc>
+   </key>
+  </help>
+
+  <multiplay>
+    <generic>
+       <float n="0"> 1.0 </float>
+       <float n="1"> 1.0 </float>
+    </generic>
+  </multiplay>
+
+  <systems>
+    <autopilot>
+      <path>Aircraft/TARDIS/Systems/fade_animation.xml</path>
+    </autopilot>
+  </systems>
+
+</sim>
+
+ <TARDIS>
+   <cloaking-command type="double">1.0</cloaking-command>
+ </TARDIS>
+
+ <input>
+   <keyboard>
+
+    <key n="99">
+     <name>c</name>
+     <desc>toggle cloaking</desc>
+     <binding>
+       <command>property-toggle</command>
+       <property>TARDIS/cloaking-command</property>
+     </binding>
+    </key>
+
+   </keyboard>
+ </input>
+
+ <nasal>
+ </nasal>
+
+</PropertyList>
