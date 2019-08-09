@@ -7,13 +7,38 @@
 
 <PropertyList>
  <path>TARDIS.ac</path>
+ 
+ <!-- ####################   SPINNING ANIMATION   ################### -->
+ 
+ <animation>
+  <type>spin</type>
+  <object-name>TARDIS</object-name>
+  <object-name>TARDIS_Bulb</object-name>
+  <object-name>TARDIS_DoorHandle</object-name>
+  <object-name>TARDIS_Glass1</object-name>
+  <object-name>TARDIS_Glass2</object-name>
+  <object-name>TARDIS_Interior</object-name>
+  
+  <property>/velocities/airspeed-kt</property>
+  <factor>0.004</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>0</y>
+   <z>1</z>
+  </axis>
+ </animation>
 
  <!-- #####################   CLOAKING DEVICE   #################### -->
 
  <animation>
    <type>blend</type>
-   <object>TARDIS</object>
-   <object>  </object>
+   <object> </object>
+   <object> </object>
    <property>/sim/multiplay/generic/float[0]</property>
    <factor>1</factor>
    <min>0</min>
