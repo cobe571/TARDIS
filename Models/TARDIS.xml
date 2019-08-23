@@ -20,7 +20,7 @@
   <object-name>TARDIS_Interior</object-name>
   
   <property>/velocities/airspeed-kt</property>
-  <factor>0.004</factor>
+  <factor>0.009</factor>
   <center>
    <x-m>0</x-m>
    <y-m>0</y-m>
